@@ -1,6 +1,27 @@
 
 The Spring Framework use the skill recreate a MVC process design pattern.So you can use the JSP architecher to compare 
 what is the differences with Spring  approach to building RESTful web services !!
+Reference URL :
+https://spring.io/guides/gs/consuming-rest/==>啟動WEB-SEVICE WITH GET AND POST
+https://spring.io/guides/gs/integration/   ==>
+https://spring.io/guides/gs/spring-boot/   ==>類似開機啟動JAVA BEAN 
+https://spring.io/guides/gs/serving-web-content/    ==>建立一完整 WEB 前後端 但尚未連結DATABASE
+https://spring.io/guides/gs/relational-data-access/ ==>使用JDBC 新增 修改 刪除 資料庫
+https://spring.io/guides/gs/accessing-data-mysql/   ==>與資料庫連結取代 drivermanager
+https://spring.io/guides/gs/handling-form-submission/ ==>使用 th:action="@{/greeting}",th:object="${greeting}",th:field="{id}"
+                                                         th:field="{content}" expression 代替JSTL EL 標籤!
+
+STEP 0)ABOUT  The  /greeting type look like instead of a string type of a response.
+
+1.The service will handle GET requests for /greeting, optionally with a name parameter in the query string. 
+2.The GET request should return a 200 OK response with JSON in the body that represents a greeting. 
+3.It should look something like this:
+
+{
+    "id": 1,
+    "content": "Hello, World!"
+}
+
 
 STEP 1)Creat a Request 
 
